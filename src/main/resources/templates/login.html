@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4 th:text="#{login.tip}"></h4>
+<h4 th:text="#{login.username}"></h4>
+<h4 th:text="#{login.passwd}"></h4>
+<h4>[[#{login.rememberme}]]</h4>
+<h4 th:text="#{login.btn}"></h4>
+<a th:href="@{/login(l='zh_CN')}">中文</a>
+<a th:href="@{/login(l='en_US')}">英文</a>
+</body>
+</html>
